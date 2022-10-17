@@ -4,34 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
     <title>Meeting minutes</title>
 </head>
 <body>
     <main>
+        <div class="intro">
 
-        <h2>Meeting minutes</h2>
-        <h3>Meeting Information</h3>
-        <div>
-            <strong>Meeting Date/Time:</strong> 10/11/22, 9:00 am <br>
-            <strong>Meeting Purpose:</strong> Kickoff <br>
-            <strong>Meeting Location:</strong> Zoom <br> 
-            <strong>Note Taker:</strong>Sam Ji <br>
+            <h2>Meeting minutes</h2>
+            <h3>Meeting Information</h3>
+            <div>
+                <strong>Meeting Date/Time:</strong> 10/11/22, 9:00 am <br>
+                <strong>Meeting Purpose:</strong> Kickoff <br>
+                <strong>Meeting Location:</strong> Zoom <br> 
+                <strong>Note Taker:</strong>Sam Ji <br>
+            </div>
         </div>
         <h3>Attendees</h3>
-        <ul>
-            <li>Sam Ji</li>
-            <li>Nathan Enrici</li>
-            <li>Sarah Thomson</li>
-            <li>Chia-Han Chen</li>
-            <li>Nicholas Tran</li>
+        <ul id="attendees">
+            <li class="name">Sam Ji</li>
+            <li class="name">Nathan Enrici</li>
+            <li class="name">Sarah Thomson</li>
+            <li class="name">Chia-Han Chen</li>
+            <li class="name">Nicholas Tran</li>
         </ul>
         
         
         <h3>Meeting Content</h3>
-        <div>
+        <div style="color:rgb(76, 0, 255); font-style: italic; padding-bottom: 30px;">
             <ol>
                 <li>Created Github repository for the project and invited teammates;</li>
                 <li>Worked through team contract;</li>
+                <li>Conducted Icebreaker;</li>
+                <li>Settled future meeting schedule;</li>
             </ol>
         </div>
         
@@ -52,9 +60,17 @@
         
     </main>
     
-    <footer>
+    <footer class="footer">
         <h3>A Preview of Meeting Minutes in Markdown</h3>
         <img src="screenshot.png" alt="a screenshot of the meeting minute in markdown" width="200" height="200"/>
     </footer>
+
+    <style>
+        .intro {
+            font-weight: 500;
+            font-family: sans-serif;
+            color: hsl(30,40,50);
+        }
+    </style>
 </body>
 </html>
